@@ -1,10 +1,12 @@
 import React from "react";
+import CardForm from "../CardForm/CardForm.js";
 import './CardContainer.css'
 
 const CardContainer = (props) =>{
     return(
         <div className="cardContainer">
-            <p>Card Container</p>
+            
+            <CardForm/>
         </div>
     )
 } 
