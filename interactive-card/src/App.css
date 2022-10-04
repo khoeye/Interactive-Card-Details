@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&display=swap');
+
 * {
     padding:0;
     margin:0px;
+    font-family: 'Space Grotesk', sans-serif;
   }
   
   html {
     font-size:10px;
+    font-family: 'Space Grotesk', sans-serif;
   }
 
   .App {
