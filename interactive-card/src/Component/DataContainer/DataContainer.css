@@ -3,5 +3,7 @@
     height: 100%;
     width: 100%;
     background-image: url("assets/bg-main-desktop.png");
+    background-size: contain;
+    resize: both;
 
 }
