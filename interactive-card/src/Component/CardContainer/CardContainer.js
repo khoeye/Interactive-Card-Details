@@ -1,5 +1,6 @@
 import React from "react";
-import CardForm from "../CardForm/CardForm";
+
+import CardForm from "../CardForm/CardForm.js";
 import './CardContainer.css'
 
 const CardContainer = (props) =>{
