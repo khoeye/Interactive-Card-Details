@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import '/FrontCard.css'
+import './FrontCard.css'
 
 const FrontCard = (props) =>{
     return(
