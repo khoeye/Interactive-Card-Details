@@ -6,8 +6,8 @@ import DataContainer from './Component/DataContainer/DataContainer';
 function App() {
   return (
     <div className="App">
-      <DataContainer/>
       <CardContainer/>
+      <DataContainer/>
     </div>
   );
 }
