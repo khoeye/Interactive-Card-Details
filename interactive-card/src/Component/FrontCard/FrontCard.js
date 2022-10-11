@@ -1,11 +1,14 @@
-import React, { Fragment } from "react";
+import React from "react";
+import CardIcon from "./CardIconSVG";
 import './FrontCard.css'
 
 const FrontCard = (props) =>{
     return(
-        <Fragment>
-            
-        </Fragment>
+        <div className="frontCardContainer">
+            <div className={"cardIcon"}>
+            <CardIcon/>
+            </div>
+        </div>
     )
 } 
 

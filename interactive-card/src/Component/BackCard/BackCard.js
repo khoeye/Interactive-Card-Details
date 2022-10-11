@@ -1,11 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 import './BackCard.css'
 
 const BackCard = (props) =>{
     return(
-        <Fragment>
-
-        </Fragment>
+        <div className="backCardContainer">
+        </div>
     )
 } 
 

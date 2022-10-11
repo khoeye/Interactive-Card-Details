@@ -1,0 +1,11 @@
+.frontCardContainer {
+    width: 44.7rem;
+    height: 24.5rem;
+    background-image: url("assets/bg-card-front.png");
+    background-size: 100%;
+    margin: 5rem 20rem 0rem 20rem;
+
+}
+.cardIcon {
+    margin: 1rem;
+}

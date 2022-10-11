@@ -1,10 +1,11 @@
 
 .cardContainer{
-    width: 30%;
+    width: 35%;
     justify-self: start;
     background-image: url("assets/bg-main-desktop.png");
     background-size: 100%;
     display: flex;
-    flex: auto;
-
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
 }

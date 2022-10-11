@@ -1,0 +1,7 @@
+.backCardContainer{
+    background-image: url("./assets/bg-card-back.png");
+    background-size: 100%;
+    width: 44.7rem;
+    height: 24.5rem;
+    margin: 5rem 20rem 0rem 20rem;
+}
