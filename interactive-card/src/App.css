@@ -15,5 +15,6 @@
     height: 100vh;
     width: 100vh;
     display: flex;
+    flex-direction: row;
     box-sizing: border-box;
 }
