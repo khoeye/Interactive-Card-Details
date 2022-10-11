@@ -4,9 +4,10 @@ import BackCard from "../BackCard/BackCard";
 import './CardContainer.css'
 
 const CardContainer = (props) =>{
+
     return(
         <div className="cardContainer">
-            <FrontCard/>
+            <FrontCard e={props.cardProp}/>
             <BackCard/>
         </div>
     )

@@ -9,3 +9,7 @@
 .cardIcon {
     margin: 1rem;
 }
+.cardNumber{
+    font: 2.5rem;
+    color: hsl(0, 0%, 100%);
+}
