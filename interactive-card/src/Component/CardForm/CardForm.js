@@ -1,9 +1,9 @@
-import React, { Fragment } from "react";
+import React from "react";
 import './CardForm.css'
 
 const CardForm = (props) => {
     return (
-        <Fragment>
+    <div className="formContainer">
             <form>
                 <p>CARDHOLDER NAME</p>
                     <input type={"text"} value={"e.g. Jane Appleseed"}/>
@@ -16,7 +16,7 @@ const CardForm = (props) => {
                 <input type={"text"} value={'e.g.'}/>
                 <button>Confirm</button>
             </form>
-        </Fragment>
+        </div>
     )
 } 
 

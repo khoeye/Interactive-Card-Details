@@ -6,4 +6,8 @@ p {
     width: 60%;
     height: 100%;
     background-color: hsl(0%, 0%, 0%);
+    align-items: center;
+    justify-content: center; 
+    align-content: center;
+    display: flex;
 }
