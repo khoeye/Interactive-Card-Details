@@ -6,7 +6,13 @@ import DataContainer from './Component/DataContainer/DataContainer';
 
 function App() {
 
-  const [cardNumber, setCardNumber] = useState("0000000000000000")
+  const [cardNumber, setCardNumber] = useState(
+    {card:"0000000000000000",
+     name: "Jane Appleseed",
+     expMM: "MM",
+     expYY: "YY",
+     cvc: "123"  
+  })
   const cardNumberHandler = (data) =>{
     setCardNumber(data)
   }
