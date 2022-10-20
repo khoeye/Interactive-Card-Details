@@ -1,3 +1,42 @@
 .formContainer{
 margin: auto;
+width: 30rem;
+height: 30rem;
+font-size: .5rem;
+display: flex;
+flex-direction: column;
+}
+
+p ~ input{
+    font-size: .6rem;
+}
+
+input{
+border: 0.1rem solid hsl(279, 6%, 55%);
+border-radius: .4rem;
+
+}
+
+.cardHolderName{
+
+}
+
+
+.cardNum{
+
+}
+
+.month{
+
+}
+
+.year{
+
+}
+.cvcNum{
+
+}
+
+.confirmButton{
+
 }
