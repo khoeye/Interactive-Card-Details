@@ -4,12 +4,32 @@
     background-image: url("assets/bg-card-front.png");
     background-size: 100%;
     margin: 5rem 20rem 0rem 20rem;
+    position: relative;
 
 }
 .cardIcon {
     margin: 1rem;
 }
 .cardNumber{
-    font: 2.5rem;
+    font-size: 2.5rem;    
     color: hsl(0, 0%, 100%);
+}
+
+.cardName{
+    font-size: 2.5rem;
+    color: hsl(0, 0%, 100%);
+    margin: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.cardExp{
+    font-size: 2.5rem;
+    color: hsl(0, 0%, 100%);
+    text-align: right;
+    margin: 1rem;    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
 }

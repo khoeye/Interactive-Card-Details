@@ -8,7 +8,7 @@ const CardContainer = (props) =>{
     return(
         <div className="cardContainer">
             <FrontCard e={props.cardProp}/>
-            <BackCard/>
+            <BackCard e={props.cardProp}/>
         </div>
     )
 } 

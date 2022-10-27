@@ -48,8 +48,12 @@ const CardForm = (props) => {
         <p>CARD NUMBER</p>
         <input
           className="cardNum"
-          type={"text"}
-          placeholder={"e.g. 1234 5678 9123 0000"}
+          maxLength="19"
+          minLength="8"
+          type="tel" 
+          inputmode="numeric" 
+          pattern="[0-9\s]{13,19}"
+          placeholder="e.g. 1234 5678 9123 0000"
           onChange={cardNumberHandler}
         />
       </div>

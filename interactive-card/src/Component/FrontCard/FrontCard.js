@@ -13,11 +13,9 @@ const FrontCard = (props) =>{
                 
             <CardIcon/>
             </div>
-            <h1 className="cardNumber">{props.e.card}</h1>
-            <p>{props.e.name}</p> 
-            <span>
-                <p>{props.e.expMM}/{props.e.expYY}</p>
-            </span>
+            <p className="cardNumber">{props.e.card}</p>
+                <p className="cardName">{props.e.name}</p>
+                <p className="cardExp">{props.e.expMM}/{props.e.expYY}</p>
         </div>
     )
 } 
