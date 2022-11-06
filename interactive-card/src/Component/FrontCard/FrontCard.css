@@ -5,29 +5,38 @@
     background-size: 100%;
     margin: 5rem 20rem 0rem 20rem;
     position: relative;
+    font-weight: 100;
+    font-size: 2rem;
 
 }
 .cardIcon {
-    margin: 1rem;
+    margin: 2.5rem;
 }
 .cardNumber{
-    font-size: 2.5rem;    
+    font-size: 2.5rem;
     color: hsl(0, 0%, 100%);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 60%;
+    word-spacing: .5rem;
+    letter-spacing: .4rem;
 }
 
 .cardName{
-    font-size: 2.5rem;
     color: hsl(0, 0%, 100%);
-    margin: 1rem;
+    margin: 2rem 0 2rem 3rem;
     position: absolute;
     left: 0;
     bottom: 0;
 }
 .cardExp{
-    font-size: 2.5rem;
     color: hsl(0, 0%, 100%);
     text-align: right;
-    margin: 1rem;    
+    margin: 2rem 3rem 2rem 0;    
     position: absolute;
     right: 0;
     bottom: 0;
