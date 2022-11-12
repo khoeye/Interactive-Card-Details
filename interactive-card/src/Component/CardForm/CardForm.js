@@ -7,6 +7,7 @@ const CardForm = (props) => {
   const [cardForm, setCardForm] = useState({});
   props.onAddData(cardForm);
 
+  // These are the event handlers to grab the users input as they are typing  we can lift the state
   const cardNameHandler = (event) => {
     setCardForm((prevState) => {
       return { ...prevState, name: event.target.value };
@@ -33,21 +34,27 @@ const CardForm = (props) => {
     });
   };
 
+  //Form Submission handler to help with validation
+  const formSubmissionHandler = (event) =>{
+    event.preventDefault()
+  }
+
   return (
-    <div className="formContainer">
-      <div>
+    <form 
+    className="formContainer"
+    onSubmit={formSubmissionHandler}>
+      <div className="cardHolderName">
         <p>CARDHOLDER NAME</p>
         <input
-          className="cardHolderName"
           type={"text"}
           placeholder={"e.g. Jane Appleseed"}
           onChange={cardNameHandler}
+          required={true}
         />
       </div>
-      <div>
+      <div className="cardNum">
         <p>CARD NUMBER</p>
         <input
-          className="cardNum"
           maxLength="19"
           minLength="8"
           type="tel" 
@@ -55,36 +62,40 @@ const CardForm = (props) => {
           pattern="[0-9\s]{13,19}"
           placeholder="e.g. 1234 5678 9123 0000"
           onChange={cardNumberHandler}
+          required={true}
         />
       </div>
-      <div>
+      <div className="expDate">
         <p>EXP. DATE (MM/YY)</p>
         <input
           className="month"
           type={"text"}
           placeholder={"MM"}
           onChange={cardexpMMHandler}
+          required={true}
         />
         <input
           className="year"
           type={"text"}
           placeholder={"YY"}
           onChange={cardexpYYHandler}
+          required={true}
+          
         />
       </div>
-      <div>
+      <div className="cvcNum" >
         <p>CVC</p>
         <input
-          className="cvcNum"
           type={"text"}
           placeholder={"e.g. 123"}
           onChange={cardCvcHandler}
+          required={true}
         />
       </div>
-      <div>
-        <button className="confirmButton">Confirm</button>
+      <div className="confirmButton">
+        <button>Confirm</button>
       </div>
-    </div>
+    </form>
   );
 };
 
