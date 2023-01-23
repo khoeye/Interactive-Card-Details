@@ -6,6 +6,7 @@ import './FrontCard.css'
 
 const FrontCard = (props) =>{
 
+    
 
     return(
         <div className="frontCardContainer">
@@ -14,8 +15,8 @@ const FrontCard = (props) =>{
             <CardIcon/>
             </div>
             <p className="cardNumber">{props.e.card}</p>
-                <p className="cardName">{props.e.name}</p>
-                <p className="cardExp">{props.e.expMM}/{props.e.expYY}</p>
+            <p className="cardName">{props.e.name}</p>
+            <p className="cardExp">{props.e.expMM}/{props.e.expYY}</p>
         </div>
     )
 } 
