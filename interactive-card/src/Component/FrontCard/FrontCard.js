@@ -6,6 +6,7 @@ import './FrontCard.css'
 
 const FrontCard = (props) =>{
 
+    
 
     return(
         <div className="frontCardContainer">
