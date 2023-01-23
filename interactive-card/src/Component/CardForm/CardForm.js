@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import "./CardForm.css";
 
 const CardForm = (props) => {
-  //0=Incorrect Value entered, 1=No Value Entered, 2=ValidValue Entered
-  const [cardNumberEmpty, setCardNumberEmpty] = useState(1);
+
+
+  //0=BeginingState, 1=No Value Entered, 2=Incorrect Value entered, 3=Valid input
+ 
+  const [formInputValid, setFormInputValid] = useState(0)
   const [cardForm, setCardForm] = useState({});
   props.onAddData(cardForm);
 
@@ -46,6 +49,7 @@ const CardForm = (props) => {
       <div className="cardHolderName">
         <p>CARDHOLDER NAME</p>
         <input
+        className="input_field"
           type={"text"}
           placeholder={"e.g. Jane Appleseed"}
           onChange={cardNameHandler}
@@ -55,6 +59,7 @@ const CardForm = (props) => {
       <div className="cardNum">
         <p>CARD NUMBER</p>
         <input
+        className="input_field"
           maxLength="19"
           minLength="8"
           type="tel" 
@@ -68,14 +73,14 @@ const CardForm = (props) => {
       <div className="expDate">
         <p>EXP. DATE (MM/YY)</p>
         <input
-          className="month"
+          className="month input_field"
           type={"text"}
           placeholder={"MM"}
           onChange={cardexpMMHandler}
           required={true}
         />
         <input
-          className="year"
+          className="year input_field"
           type={"text"}
           placeholder={"YY"}
           onChange={cardexpYYHandler}
@@ -86,6 +91,8 @@ const CardForm = (props) => {
       <div className="cvcNum" >
         <p>CVC</p>
         <input
+        
+          className="input_field"
           type={"text"}
           placeholder={"e.g. 123"}
           onChange={cardCvcHandler}
@@ -93,7 +100,10 @@ const CardForm = (props) => {
         />
       </div>
       <div className="confirmButton">
-        <button>Confirm</button>
+        <input 
+        className="submit_button" 
+        type={"submit"}
+        value={"Confirm"}></input>
       </div>
     </form>
   );
